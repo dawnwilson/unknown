@@ -1,0 +1,66 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Scripts/HUD.gd" type="Script" id=1]
+
+[node name="HUD" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+anchor_right = 1.0
+margin_bottom = 14.0
+size_flags_horizontal = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CenterContainer" type="CenterContainer" parent="HBoxContainer"]
+margin_right = 338.0
+margin_bottom = 14.0
+size_flags_horizontal = 3
+
+[node name="Player1HealthAmount" type="Label" parent="HBoxContainer/CenterContainer"]
+margin_left = 157.0
+margin_right = 181.0
+margin_bottom = 14.0
+size_flags_horizontal = 3
+text = "100"
+
+[node name="CenterContainer2" type="CenterContainer" parent="HBoxContainer"]
+margin_left = 342.0
+margin_right = 681.0
+margin_bottom = 14.0
+size_flags_horizontal = 3
+
+[node name="HBoxContainer" type="HBoxContainer" parent="HBoxContainer/CenterContainer2"]
+margin_left = 142.0
+margin_right = 197.0
+margin_bottom = 14.0
+
+[node name="CoinLabel" type="Label" parent="HBoxContainer/CenterContainer2/HBoxContainer"]
+margin_right = 43.0
+margin_bottom = 14.0
+text = "Coins: "
+
+[node name="CoinAmount" type="Label" parent="HBoxContainer/CenterContainer2/HBoxContainer"]
+margin_left = 47.0
+margin_right = 55.0
+margin_bottom = 14.0
+text = "0"
+
+[node name="CenterContainer3" type="CenterContainer" parent="HBoxContainer"]
+margin_left = 685.0
+margin_right = 1024.0
+margin_bottom = 14.0
+size_flags_horizontal = 3
+
+[node name="Player2HealthAmount" type="Label" parent="HBoxContainer/CenterContainer3"]
+margin_left = 157.0
+margin_right = 181.0
+margin_bottom = 14.0
+text = "100"
