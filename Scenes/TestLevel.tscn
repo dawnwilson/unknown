@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://Scenes/Coin.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scenes/Player1.tscn" type="PackedScene" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://Assets/temp_NonWalkableTile.png" type="Texture" id=4]
 [ext_resource path="res://Assets/temp_WalkableTile.png" type="Texture" id=5]
 [ext_resource path="res://Scenes/Player2.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Scenes/Vase.tscn" type="PackedScene" id=7]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 16, 16, 0, 16, 0, 0, 16, 0 )
@@ -81,13 +82,48 @@ position = Vector2( 1197, 594 )
 [node name="Coin8" parent="Collectibles" instance=ExtResource( 1 )]
 position = Vector2( 1232, 213 )
 
+[node name="Destructibles" type="Node2D" parent="."]
+
+[node name="Vase" parent="Destructibles" instance=ExtResource( 7 )]
+position = Vector2( 742, 221 )
+
+[node name="Vase2" parent="Destructibles" instance=ExtResource( 7 )]
+position = Vector2( 700, 274 )
+
+[node name="Vase3" parent="Destructibles" instance=ExtResource( 7 )]
+position = Vector2( 716, 77 )
+
+[node name="Vase4" parent="Destructibles" instance=ExtResource( 7 )]
+position = Vector2( 734, 85 )
+
+[node name="Vase5" parent="Destructibles" instance=ExtResource( 7 )]
+position = Vector2( 718, 101 )
+
+[node name="Vase6" parent="Destructibles" instance=ExtResource( 7 )]
+position = Vector2( 708, 205 )
+
+[node name="Vase7" parent="Destructibles" instance=ExtResource( 7 )]
+position = Vector2( 726, 205 )
+
+[node name="Vase8" parent="Destructibles" instance=ExtResource( 7 )]
+position = Vector2( 708, 187 )
+
+[node name="Vase9" parent="Destructibles" instance=ExtResource( 7 )]
+position = Vector2( 518, 291 )
+
+[node name="Vase10" parent="Destructibles" instance=ExtResource( 7 )]
+position = Vector2( 536, 274 )
+
+[node name="Vase11" parent="Destructibles" instance=ExtResource( 7 )]
+position = Vector2( 518, 266 )
+
 [node name="Enemies" type="Node2D" parent="."]
 
 [node name="Enemy" parent="Enemies" instance=ExtResource( 3 )]
 position = Vector2( 575, 353 )
 
 [node name="Player1" parent="." instance=ExtResource( 2 )]
-position = Vector2( 38, 33 )
+position = Vector2( 109, 127 )
 
 [node name="Player2" parent="." instance=ExtResource( 6 )]
-position = Vector2( 424, 124 )
+position = Vector2( 145, 64 )

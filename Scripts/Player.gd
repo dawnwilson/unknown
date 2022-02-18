@@ -24,8 +24,8 @@ func get_input():
 	
 	if Input.is_action_just_pressed("shoot_%s" % id):
 		var newBullet = bullet.instance()
-		newBullet.position = position
-		add_child(newBullet)
+		owner.add_child(newBullet)
+		newBullet.transform = $FirePoint.global_transform
 
 
 func _physics_process(delta):
